@@ -6,7 +6,8 @@ import WhoView from '../views/WhoView.vue'
 import 'animate.css'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
+  mode: 'history',
   routes: [
     {
       path: '/',
