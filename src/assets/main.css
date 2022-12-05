@@ -1,0 +1,38 @@
+@import '../assets/fonts/grtskGiga.css';
+
+:root {
+  --gray: #bebebe;
+  --dark-gray: #373737;
+  --yellow: #ffcb46;
+}
+
+:root {
+  --color-background: var(--gray);
+  --color-text: var(--dark-gray);
+  --color-hover: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Grtsk Giga';
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
